@@ -1,4 +1,4 @@
-NBTscan version 1.5.1 Copyright (C) 1999-2003 Alla Bezroutchko
+# NBTscan
 
 NBTscan is a program for scanning IP networks for NetBIOS name
 information. It sends NetBIOS status query to each address in
@@ -10,7 +10,7 @@ NetBIOS computer name, logged-in user name and MAC address
 See http://www.inetcat.org/software/nbtscan.html for
 NBTscan homepage.
 
-LICENSE.
+## LICENSE.
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ along with this program (in a file called COPYING); if not, write
 to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, 
 MA 02139, USA.
 
-INSTALLATION.
+## INSTALLATION.
 
 NBTscan compiles and runs on Unix and Windows. I have tested it
 on Windows NT 4.0, Windows 2000, FreeBSD 4.3, OpenBSD 2.8
@@ -38,29 +38,31 @@ OSF/1 and fixed several bugs. He reports that NBTscan also runs
 on IRIX/SGI with minor problems. Mohammad A. Haque 
 <mhaque@haque.net> ported nbtscan to Darwin.
 
-Windows:
+### Windows:
 
 To compile this under Windows you will need Cygwin. You can
 Download and install Cygwin from 
 http://sources.redhat.com/cygwin/
 Start Cygwin shell and proceed from there as in Unix 
 installation
-   
-Unix:
-Do
 
+### Unix
+
+```
 ./configure
 
 make
 
 make install
+```
 
 That's all.
 
-RUNNING.
+## RUNNING.
 
 Usage:
 
+```
 nbtscan [-v] [-d] [-e] [-l] [-t timeout] [-b bandwidth] [-r] [-q] [-s separator] [-m retransmits] (-f filename)|(<scan_range>) 
         -v              verbose output. Print all names received
                         from each host
@@ -107,9 +109,9 @@ Examples:
                 ...
         nbtscan -f iplist
                 Scans IP addresses specified in file iplist.
+```
 
-
-BUGS/LIMITATIONS
+## BUGS/LIMITATIONS
 
 Windows version has a certain limitation: you cannot scan Win95 
 hosts with it because Windows 95 always sends responses to name 
