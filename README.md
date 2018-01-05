@@ -93,23 +93,43 @@ nbtscan [-v] [-d] [-e] [-l] [-t timeout] [-b bandwidth] [-r] [-q] [-s separator]
                         like 192.168.1.1 or
                         range of addresses in one of two forms: 
                         xxx.xxx.xxx.xxx/xx or xxx.xxx.xxx.xxx-xxx.
-Examples:
-        nbtscan -r 192.168.1.0/24
-                Scans the whole C-class network.
-        nbtscan 192.168.1.25-137
-                Scans a range from 192.168.1.25 to 192.168.1.137
-        nbtscan -v -s : 192.168.1.0/24
-                Scans C-class network. Prints results in script-friendly
-                format using colon as field separator.
-                Produces output like that:
-                192.168.0.1:NT_SERVER:00U
-                192.168.0.1:MY_DOMAIN:00G
-                192.168.0.1:ADMINISTRATOR:03U
-                192.168.0.2:OTHER_BOX:00U
-                ...
-        nbtscan -f iplist
-                Scans IP addresses specified in file iplist.
 ```
+
+Examples:
+
+```
+nbtscan -r 192.168.1.0/24
+```
+
+Scans the whole C-class network.
+
+```
+nbtscan 192.168.1.25-137
+```
+
+Scans a range from 192.168.1.25 to 192.168.1.137
+
+```
+nbtscan -v -s : 192.168.1.0/24
+```
+
+Scans C-class network. Prints results in script-friendly
+format using colon as field separator.
+Produces output like that:
+
+```
+192.168.0.1:NT_SERVER:00U
+192.168.0.1:MY_DOMAIN:00G
+192.168.0.1:ADMINISTRATOR:03U
+192.168.0.2:OTHER_BOX:00U
+...
+```
+
+```
+nbtscan -f iplist
+```
+
+Scans IP addresses specified in file iplist.
 
 ## BUGS/LIMITATIONS
 
